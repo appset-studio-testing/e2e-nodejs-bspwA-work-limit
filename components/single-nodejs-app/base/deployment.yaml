@@ -22,7 +22,7 @@ spec:
         app.kubernetes.io/instance: single-nodejs-app
     spec:
       containers:
-      - image: image
+      - image: quay.io/ysubrama_org/e2e-demos-jogz-tenant/e2e-nodejs/single-nodejs-app@sha256:87a3990e56eb66502293115f6ad45838b8c02a9e7dae8bb3329b79478cc3b586
         imagePullPolicy: Always
         name: container-image
         ports:
