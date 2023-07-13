@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: single-nodejs-app
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/ysubrama_org/e2e-demos-jogz-tenant/e2e-nodejs/single-nodejs-app@sha256:87a3990e56eb66502293115f6ad45838b8c02a9e7dae8bb3329b79478cc3b586
+        name: container-image
+        resources: {}
+status: {}
